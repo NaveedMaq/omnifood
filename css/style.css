@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -58,7 +58,7 @@ body {
 }
 
 .hero {
-  max-width: 125rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -83,11 +83,14 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
+
+  text-decoration: none;
   font-size: 2rem;
+  font-weight: 600;
+
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   cursor: pointer;
-  text-decoration: none;
 
   transition: background-color 300ms;
 }
