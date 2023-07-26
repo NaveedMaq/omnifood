@@ -16,6 +16,7 @@ Default: 1
 Small: 1.05
 Medium: 1.2
 Default Paragraph: 1.6
+Large: 1.8
 
 - Letter spacing
 -0.5px
@@ -66,7 +67,10 @@ Medium: 11px
 }
 
 html {
+  /* 10px / 16px = 0.625 = 62.5% */
   font-size: 62.5%;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -74,6 +78,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /*******************************/
@@ -88,7 +93,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 6.4rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid:not(:last-child) {
@@ -105,10 +111,6 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -236,6 +238,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 *:focus {

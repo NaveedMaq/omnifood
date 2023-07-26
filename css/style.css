@@ -11,6 +11,8 @@
   /* Because i want it to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -24,7 +26,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8em;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -51,6 +53,26 @@
 .nav-cta:hover,
 .nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
 }
 
 /*******************************/
@@ -463,6 +485,7 @@
 
 .cta {
   display: grid;
+  /* 2/3 = 66.6%  + 1/3 = 33.3% */
   grid-template-columns: 2fr 1fr;
   background-color: #e67e22;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
