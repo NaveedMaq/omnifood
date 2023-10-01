@@ -2,7 +2,7 @@
 
 Marketing website for an AI based food subscription service
 
-## [Live Preview](https://www.naveedmaqbool.com/)
+## [Live Preview](https://omnifood.naveedmaqbool.com/)
 
 You can checkout the live version of the website by clicking the above link
 
